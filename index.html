@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JakebøyxEarn - WhatsApp Earning Apps</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
@@ -11,95 +12,147 @@
       background-color: #121212;
       color: #fff;
     }
+
     header {
       text-align: center;
       padding: 2rem;
-      background-color: rgba(31, 31, 31, 0.9);
+      background-color: #1f1f1f;
     }
+
     .logo {
-      width: 120px;
+      width: 80px;
+      height: auto;
     }
+
     .tagline {
       color: #bbb;
       margin-top: 0.5rem;
     }
-    nav {
-      background-color: #222;
-    }
+
     nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      background-color: #222;
+      margin: 0;
     }
+
     nav li {
-      margin: 0.5rem 1rem;
+      margin: 0 1rem;
     }
+
     nav a {
       color: #00e676;
       text-decoration: none;
       font-weight: bold;
     }
-    .menu-toggle {
-      display: none;
-      background-color: #00e676;
-      color: #121212;
-      padding: 0.5rem 1rem;
-      font-size: 1.2rem;
-      cursor: pointer;
-      border: none;
-    }
-    @media (max-width: 600px) {
-      nav ul {
-        display: none;
-        flex-direction: column;
-      }
-      nav ul.show {
-        display: flex;
-      }
-      .menu-toggle {
-        display: block;
-        margin: 1rem auto;
-      }
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: rgba(31, 31, 31, 0.9);
-      color: #888;
-      margin-top: 2rem;
-    }
+
     main {
       padding: 2rem;
     }
-  </style>
-  <script>
-    function toggleMenu() {
-      const nav = document.querySelector('nav ul');
-      nav.classList.toggle('show');
+
+    #search {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      background-color: #1e1e1e;
+      color: #fff;
     }
-  </script>
+
+    .apps {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .app {
+      background-color: #1e1e1e;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .app h2 {
+      margin-top: 0;
+      color: #00e676;
+    }
+
+    .app a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #00e676;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo" />
+    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo">
     <h1>JakebøyxEarn</h1>
     <p class="tagline">Earn Daily from Trusted WhatsApp Apps</p>
   </header>
-  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="policy.html">Policy</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Policy</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-<main><h2>Trusted WhatsApp Apps</h2><p>🎁 Sign Up Bonus WA Plus1,500<br />🏦 Min. Withdraw WA Plus1,500</p></main>
+
+  <main>
+    <input type="text" id="search" placeholder="Search All WhatsApp Apps Here...">
+    <section class="apps">
+      <div class="app">
+        <h2>Taskall</h2>
+        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <a href="https://taskall.top/pages/login/register?promo_code=D9A13554" target="_blank">Get Link</a>
+      </div>
+
+      <div class="app">
+        <h2>Titit</h2>
+        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <a href="https://titit.vip/pages/login/register?promo_code=D9A13554" target="_blank">Get Link</a>
+      </div>
+
+      <div class="app">
+        <h2>N1</h2>
+        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <a href="https://n1.02xu.com/go/44302319" target="_blank">Get Link</a>
+      </div>
+
+      <div class="app">
+        <h2>Cashshare</h2>
+        <p>🎁 Sign Up Bonus ₹20<br>🏦 Min. Withdraw ₹100</p>
+        <a href="https://cashshare.net?inviteCode=HBRBYKNK" target="_blank">Get Link</a>
+      </div>
+
+      <div class="app">
+        <h2>LetShare</h2>
+        <p>🎁 Sign Up Bonus ₹20<br>🏦 Min. Withdraw ₹100</p>
+        <a href="https://letshare.me?inviteCode=NURH22VN" target="_blank">Get Link</a>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <p>&copy; 2025 JakebøyxEarn. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
