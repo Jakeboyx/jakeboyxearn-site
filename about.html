@@ -1,45 +1,114 @@
-<!DOCTYPE html><html><head><title>About</title>
-<style>
-  body {
-    background-color: #121212;
-    color: #eaeaea;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #000;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-  h1 {
-    font-size: 2.2rem;
-    color: #00ff99;
-  }
-  .nav {
-    background-color: #000;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  .nav a {
-    color: #00ff99;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .section {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
-  }
-</style>
-</head><body><header><h1>About JakebøyxEarn</h1></header>
-<nav class="nav">
-  <a href="index.html">Main</a>
-  <a href="home.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="policy.html">Policy</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<section class='section'><p>JakebøyxEarn is a trusted hub for discovering paying WhatsApp earning apps. We only promote tested platforms with real results.</p></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JakebøyxEarn - WhatsApp Earning Apps</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(31, 31, 31, 0.9);
+    }
+    .logo {
+      width: 120px;
+    }
+    .tagline {
+      color: #bbb;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #222;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin: 0.5rem 1rem;
+    }
+    nav a {
+      color: #00e676;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu-toggle {
+      display: none;
+      background-color: #00e676;
+      color: #121212;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(31, 31, 31, 0.9);
+      color: #888;
+      margin-top: 2rem;
+    }
+    main {
+      padding: 2rem;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav ul');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo" />
+    <h1>JakebøyxEarn</h1>
+    <p class="tagline">Earn Daily from Trusted WhatsApp Apps</p>
+  </header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="policy.html">Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <main>
+      <h2>📖 About JakebøyxEarn</h2>
+      <p>Welcome to <strong>JakebøyxEarn</strong>! 🚀</p>
+      <p>We are a digital platform dedicated to connecting Nigerians 🇳🇬 with real and trusted earning opportunities 💰 via WhatsApp. In an age of scams and fake promises, we stand out by verifying and listing only genuine earning apps 🛡️.</p>
+      <p>📲 Our platform showcases apps that reward users for simple tasks like referring friends, watching videos, completing surveys, and more. Whether you're a student, worker, or entrepreneur, JakebøyxEarn helps you earn extra income on your phone — anytime, anywhere!</p>
+      <p>🎯 Our mission is simple: To help our users <em>earn smart, earn safe, and earn daily</em>.</p>
+      <p>💡 New to online earning? Don’t worry! Each app listed on our site comes with brief descriptions, bonuses, and withdrawal terms so you know what to expect.</p>
+    </main>
+    
+  <footer>
+    <p>&copy; 2025 JakebøyxEarn. All rights reserved.</p>
+  </footer>
+</body>
+</html>

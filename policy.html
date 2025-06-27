@@ -1,45 +1,119 @@
-<!DOCTYPE html><html><head><title>Policy</title>
-<style>
-  body {
-    background-color: #121212;
-    color: #eaeaea;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #000;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-  h1 {
-    font-size: 2.2rem;
-    color: #00ff99;
-  }
-  .nav {
-    background-color: #000;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  .nav a {
-    color: #00ff99;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .section {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
-  }
-</style>
-</head><body><header><h1>Policy</h1></header>
-<nav class="nav">
-  <a href="index.html">Main</a>
-  <a href="home.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="policy.html">Policy</a>
-  <a href="contact.html">Contact</a>
-</nav>
-<section class='section'><p>Your privacy is respected. We don’t collect personal data. Only trusted referral links are used.</p></section></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JakebøyxEarn - WhatsApp Earning Apps</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(31, 31, 31, 0.9);
+    }
+    .logo {
+      width: 120px;
+    }
+    .tagline {
+      color: #bbb;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background-color: #222;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin: 0.5rem 1rem;
+    }
+    nav a {
+      color: #00e676;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu-toggle {
+      display: none;
+      background-color: #00e676;
+      color: #121212;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+      }
+      nav ul.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+        margin: 1rem auto;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(31, 31, 31, 0.9);
+      color: #888;
+      margin-top: 2rem;
+    }
+    main {
+      padding: 2rem;
+    }
+  </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav ul');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo" />
+    <h1>JakebøyxEarn</h1>
+    <p class="tagline">Earn Daily from Trusted WhatsApp Apps</p>
+  </header>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="policy.html">Policy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+    <main>
+      <h2>📜 Our Policy</h2>
+      <p>At <strong>JakebøyxEarn</strong>, we prioritize your online safety and transparency 🔒.</p>
+      <ul>
+        <li>✅ We do not own or operate the apps listed on this website.</li>
+        <li>🔍 Each app is tested before listing, but we cannot guarantee long-term performance or payout stability.</li>
+        <li>⚠️ Always invest responsibly. Only use funds you can afford to risk.</li>
+        <li>📎 We are not liable for any financial losses or account issues arising from third-party platforms.</li>
+        <li>📢 We do not collect personal data or require sign-ups to use our platform.</li>
+      </ul>
+      <p>By using our site, you agree to take full responsibility for your actions and investments.</p>
+      <p>Stay sharp and earn smart! 💼</p>
+    </main>
+    
+  <footer>
+    <p>&copy; 2025 JakebøyxEarn. All rights reserved.</p>
+  </footer>
+</body>
+</html>
