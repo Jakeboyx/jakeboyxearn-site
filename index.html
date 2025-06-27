@@ -1,34 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>JakebøyxEarn - WhatsApp Earning Apps</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       background-color: #121212;
       color: #fff;
     }
-
     header {
       text-align: center;
       padding: 2rem;
-      background-color: #1f1f1f;
+      background-color: rgba(31, 31, 31, 0.9);
     }
-
     .logo {
       width: 80px;
-      height: auto;
     }
-
     .tagline {
       color: #bbb;
       margin-top: 0.5rem;
     }
-
+    #clock {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #00e676;
+    }
     nav ul {
       display: flex;
       justify-content: center;
@@ -37,21 +39,35 @@
       background-color: #222;
       margin: 0;
     }
-
     nav li {
       margin: 0 1rem;
     }
-
     nav a {
       color: #00e676;
       text-decoration: none;
       font-weight: bold;
+      padding: 0.5rem;
+      transition: box-shadow 0.3s ease;
     }
-
+    nav a:hover,
+    nav a:focus {
+      box-shadow: 0 0 10px #00e676;
+      border-radius: 5px;
+    }
+    .whatsapp-banner {
+      background-color: #00e676;
+      color: #000;
+      text-align: center;
+      padding: 1rem;
+    }
+    .whatsapp-banner a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+    }
     main {
       padding: 2rem;
     }
-
     #search {
       width: 100%;
       padding: 1rem;
@@ -62,24 +78,31 @@
       background-color: #1e1e1e;
       color: #fff;
     }
-
     .apps {
       display: grid;
       gap: 1.5rem;
     }
-
     .app {
-      background-color: #1e1e1e;
+      background-color: rgba(30,30,30,0.9);
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s forwards;
     }
-
+    .app:nth-child(1) { animation-delay: 0.1s; }
+    .app:nth-child(2) { animation-delay: 0.2s; }
+    .app:nth-child(3) { animation-delay: 0.3s; }
+    .app:nth-child(4) { animation-delay: 0.4s; }
+    .app:nth-child(5) { animation-delay: 0.5s; }
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
     .app h2 {
       margin-top: 0;
       color: #00e676;
     }
-
     .app a {
       display: inline-block;
       margin-top: 1rem;
@@ -90,63 +113,102 @@
       border-radius: 5px;
       font-weight: bold;
     }
-
+    .section {
+      margin-top: 3rem;
+    }
+    #check-status {
+      margin: 1rem 0;
+      padding: 0.75rem;
+      background: #00e676;
+      border: none;
+      color: #121212;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #status-msg {
+      font-size: 0.9rem;
+    }
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #1f1f1f;
+      background-color: rgba(31, 31, 31, 0.9);
       color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo">
+    <img src="logo.png" alt="JakebøyxEarn Logo" class="logo" />
     <h1>JakebøyxEarn</h1>
     <p class="tagline">Earn Daily from Trusted WhatsApp Apps</p>
+    <div id="clock"></div>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Policy</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#policy">Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <div class="whatsapp-banner">
+    💬 Join our WhatsApp group: <a href="https://chat.whatsapp.com/EUY3hoCjKStKhXdYPDu4wz" target="_blank">Click to join</a>
+  </div>
+
   <main>
-    <input type="text" id="search" placeholder="Search All WhatsApp Apps Here...">
+    <input type="text" id="search" placeholder="Search All WhatsApp Apps Here..." />
     <section class="apps">
       <div class="app">
         <h2>Taskall</h2>
-        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <p>🎁 Sign Up Bonus ₦1,500<br />🏦 Min. Withdraw ₦1,500</p>
         <a href="https://taskall.top/pages/login/register?promo_code=D9A13554" target="_blank">Get Link</a>
       </div>
-
       <div class="app">
         <h2>Titit</h2>
-        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <p>🎁 Sign Up Bonus ₦1,500<br />🏦 Min. Withdraw ₦1,500</p>
         <a href="https://titit.vip/pages/login/register?promo_code=D9A13554" target="_blank">Get Link</a>
       </div>
-
       <div class="app">
         <h2>N1</h2>
-        <p>🎁 Sign Up Bonus ₹100<br>🏦 Min. Withdraw ₹100</p>
+        <p>🎁 Sign Up Bonus ₦1,500<br />🏦 Min. Withdraw ₦1,500</p>
         <a href="https://n1.02xu.com/go/44302319" target="_blank">Get Link</a>
       </div>
-
       <div class="app">
         <h2>Cashshare</h2>
-        <p>🎁 Sign Up Bonus ₹20<br>🏦 Min. Withdraw ₹100</p>
+        <p>🎁 Sign Up Bonus ₦300<br />🏦 Min. Withdraw ₦1,500</p>
         <a href="https://cashshare.net?inviteCode=HBRBYKNK" target="_blank">Get Link</a>
       </div>
-
       <div class="app">
         <h2>LetShare</h2>
-        <p>🎁 Sign Up Bonus ₹20<br>🏦 Min. Withdraw ₹100</p>
+        <p>🎁 Sign Up Bonus ₦300<br />🏦 Min. Withdraw ₦1,500</p>
         <a href="https://letshare.me?inviteCode=NURH22VN" target="_blank">Get Link</a>
       </div>
+    </section>
+
+    <button id="check-status">Check Site Status</button>
+    <p id="status-msg"></p>
+
+    <section id="home" class="section">
+      <h2>Home</h2>
+      <p>Welcome to JakebøyxEarn! We list trusted WhatsApp apps that pay daily in Naira. Start earning today!</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>JakebøyxEarn is a platform helping Nigerians earn online by sharing real, tested apps. We only post what works.</p>
+    </section>
+
+    <section id="policy" class="section">
+      <h2>Policy</h2>
+      <p>We don’t own the apps listed here. Always use caution. Earnings are not guaranteed.</p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Need help? Message us on WhatsApp through the group link above.</p>
     </section>
   </main>
 
@@ -154,5 +216,27 @@
     <p>&copy; 2025 JakebøyxEarn. All rights reserved.</p>
   </footer>
 
+  <script>
+    setInterval(() => {
+      const now = new Date();
+      document.getElementById('clock').textContent = now.toLocaleTimeString('en-GB');
+    }, 1000);
+
+    document.getElementById('check-status').addEventListener('click', () => {
+      const msg = document.getElementById('status-msg');
+      msg.textContent = 'Checking…';
+      setTimeout(() => {
+        msg.textContent = '✅ Site is Online!';
+      }, 1500);
+    });
+
+    document.getElementById('search').addEventListener('input', function () {
+      const q = this.value.toLowerCase();
+      document.querySelectorAll('.app').forEach(app => {
+        const title = app.querySelector('h2').textContent.toLowerCase();
+        app.style.display = title.includes(q) ? '' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
